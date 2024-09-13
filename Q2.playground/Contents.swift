@@ -18,16 +18,12 @@ func compareVersion(version1: String, version2: String) -> Int{
                 return 1
             }
         } else if i < arrV1Count {
-            if Int(arrV1[i])! > 0 {
+            if Int(arrV1[i])! != 0 {
                 return 1
-            }else if Int(arrV1[i])! < 0 {
-                return -1
             }
         } else if i < arrV2Count {
-            if Int(arrV2[i])! > 0 {
+            if Int(arrV2[i])! != 0 {
                 return -1
-            }else if Int(arrV2[i])! < 0{
-                return 1
             }
         }
         
